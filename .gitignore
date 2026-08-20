@@ -1,2 +1,4 @@
 skills/*
 .venv
+__pycache__
+.env

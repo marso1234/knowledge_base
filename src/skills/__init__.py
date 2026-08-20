@@ -47,6 +47,4 @@ def create_skill():
     with open(f"skills/{skill_id}/skill.md", "w") as f:
         f.write(skill_template(args.skill_name))
 
-if __name__ == "__main__":
-    create_skill()
-
+    print(f"Skill {args.skill_name} Created")

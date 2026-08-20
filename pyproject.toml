@@ -7,7 +7,15 @@ authors = [
     { name = "marso1234", email = "hmsoab@connect.ust.hk" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "dotenv>=0.9.9",
+    "openai>=3.3.1",
+    "pytest>=9.1.1",
+]
+
+[project.scripts]
+knowledge-base = "knowledge_base:main"
+create-skill = "skills:create_skill"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
